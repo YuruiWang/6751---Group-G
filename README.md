@@ -1,1 +1,2 @@
-# SOEN-6441---Group-G
+# Soen-6441
+Project-Cheers

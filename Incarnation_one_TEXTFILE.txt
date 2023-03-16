@@ -1,0 +1,30 @@
+
+For Radius Value 10
+Value of the sine using functions from scratch would be 0.7386368
+Value of the cosine using functions from scratch would be -0.6741043
+Value of the angle using functions from scratch in degree would be 132.3918
+Value of line segment using functions from scratch would be 11.92663
+
+For Radius Value 10
+Value of the sine using functions from scratch would be 0.7386368
+Value of the cosine using functions from scratch would be -0.6741043
+Value of the angle using functions from scratch in degree would be 132.3918
+Value of line segment using functions from scratch would be 11.92663
+
+For Radius Value 10
+Value of the sine using functions from scratch would be 0.7386368
+Value of the cosine using functions from scratch would be -0.6741043
+Value of the angle using functions from scratch in degree would be 132.3918
+Value of line segment using functions from scratch would be 11.92663
+
+For Radius Value 10
+Value of the sine using functions from scratch would be 0.7386368
+Value of the cosine using functions from scratch would be -0.6741043
+Value of the angle using functions from scratch in degree would be 132.3918
+Value of line segment using functions from scratch would be 11.92663
+
+For Radius Value 11
+Value of the sine using functions from scratch would be 0.7386368
+Value of the cosine using functions from scratch would be -0.6741043
+Value of the angle using functions from scratch in degree would be 132.3918
+Value of line segment using functions from scratch would be 13.11929
