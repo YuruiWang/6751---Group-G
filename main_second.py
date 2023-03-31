@@ -3,11 +3,17 @@ import math
 #from decimal import Decimal,getcontext
 #from decimal import *
 print('**********CALCULATING EVERYTHING USING LIBRARY FUNCTIONS**********')
-radius_value=int(input('Enter legal value of the RADIUS:-'))
-#radius_value = Decimal(radius_value)
-radius_value = (radius_value)
-if radius_value > 100:
-    raise ValueError('A very specific bad thing happened')
+while True :
+    while True:
+        try:
+            radius_value = float(input("Please enter the radius of the circles: "))
+            break
+        except ValueError:
+            print("Please enter a valid input")
+    if radius_value < 0:
+        print("Radius Can't be less than zero")
+    else:
+        break
 print('Value of PI using library functions is ')
 print(math.pi)
 def samesign(a, b):
