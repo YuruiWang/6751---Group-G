@@ -11,7 +11,7 @@ This is the Git repository of Team-G for CHEERS project in  SOEN-6441 (Advanced 
 
 #### Unit Test cases for D2:
 | Test Case  | Input | Expected Output |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------ |
 | General  | 10  | 11.926632404 |
 | General  | 11  | 13.119295645 |
 | General  | 12 | 14.31195888 |
