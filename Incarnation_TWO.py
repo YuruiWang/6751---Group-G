@@ -79,5 +79,6 @@ CosineValue.text='Value of Cosine is: ' + str(math.cos(x1))
 alphaValue.text='Value of Angle in DEGREE is: ' + str(theta_value)
 lengthValue.text='Value of LENGTH  SEGMENT is : '+ str((2*(radius_value)*d))
 tree.write(open('Incarnation_two_XMLFILE.xml', 'wb'))
-
+def valuepassfromlibrary(l):
+    l=(2*(radius_value)*d)
 
