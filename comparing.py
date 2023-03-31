@@ -1,6 +1,6 @@
-from main import valuepassfromscratch
+from Incarnation_ONE import valuepassfromscratch
 
-from main_second import valuepassfromlibrary
+from Incarnation_TWO import valuepassfromlibrary
 
 print (valuepassfromlibrary)
 print (valuepassfromscratch)
