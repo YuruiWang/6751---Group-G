@@ -12,6 +12,6 @@ Team G- Project-CHEERS
 | Small Radius  | 0.005 | 0.0059633162 |
 | Negative Radius  | -10 | Radius Can't be less than Zero |
 | Character  | g | Please enter a valid input |
-| String  | -qwerty | Please enter a valid input |
+| String  | qwerty | Please enter a valid input |
 
 
