@@ -103,4 +103,4 @@ file_open.write ("Value of line segment from scratch would be "+str(linesegment_
 file_open.write("\n")
 def valuepassfromscratch(a):
 
-  a=linesegment_value
+    a=linesegment_value
