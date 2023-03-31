@@ -1,14 +1,3 @@
-#-*- coding: utf-8 -*-
-from decimal import Decimal,getcontext
-from decimal import *
-from xml.etree.ElementTree import Element,ElementTree, tostring
-import math
-import sys
-from xml.etree import ElementTree as ET
-import xml.dom.minidom as MD   
-# import pdb
-# pdb.set_trace()
-getcontext().prec = 7
 print('**********CALCULATING EVERYTHING FROM SCRATCH**********')
 def caluclating_factorial(number_value):   #RECURSION is used for calculating FACTORIAL from SCRATCH
     if number_value<1:
@@ -17,10 +6,10 @@ def caluclating_factorial(number_value):   #RECURSION is used for calculating FA
         return number_value * caluclating_factorial(number_value-1)
 
 def calculating_pi(number_value):     #The Bailey–Borwein–Plouffe formula (BBP formula) for calculating PI value from SCRASTCH
-    pi_value = Decimal(0)
+    pi_value = (0)
     i = 0
     while i < number_value:
-        pi_value += (Decimal(1)/(16**i))*((Decimal(4)/(8*i+1))-(Decimal(2)/(8*i+4))-(Decimal(1)/(8*i+5))-(Decimal(1)/(8*i+6)))
+        pi_value += (1/(16**i))*((4/(8*i+1))-(2/(8*i+4))-(1/(8*i+5))-(1/(8*i+6)))
         i += 1
     return pi_value
 
@@ -67,13 +56,12 @@ def bisect(func, low, high):    #The Bisection Method for calculating ROOT of th
     return midpoint
 
 def f(x1):
-    x1 = Decimal(x1)
     return x1-calculating_sine(x1)-(pi_value/2)
 
-x1 = Decimal(bisect(f, 1, 3))
+x1 = (bisect(f, 1, 3))
 print("Value of ANGLE in RADIANS would be ")
 print(x1)
-theta_value=Decimal(180*x1/pi_value)
+theta_value=(180*x1/pi_value)
  
 print("Value of ANGLE in DEGREEs would be ")
 print(theta_value)
@@ -84,11 +72,17 @@ print(calculating_sine(x1))
 print("Value of cosine would be: ")
 print((calculating_cosine(x1)))
 
-radius_value=input('Enter legal value of the RADIUS:-')
-
-radius_value = Decimal(radius_value)
-if radius_value>100:
-    raise ValueError('Please enter the legal value')
+while True :
+    while True:
+        try:
+            radius_value = float(input("Please enter the radius of the circles: "))
+            break
+        except ValueError:
+            print("Please enter a valid input")
+    if radius_value < 0:
+        print("Radius Can't be less than zero")
+    else:
+        break
 
 linesegment_value=2*(radius_value)*(1-(calculating_cosine(x1/2)))
 print("Value of LINE SEGMENT l would be: ")
@@ -99,11 +93,11 @@ file_open = open("Incarnation_one_TEXTFILE.txt", "a")
 file_open.write("\n")
 file_open.write ("For Radius Value "+str(radius_value))
 file_open.write("\n")
-file_open.write ("Value of the sine using functions from scratch would be "+str(calculating_sine(x1)))
+file_open.write ("Value of the sine from scratch would be "+str(calculating_sine(x1)))
 file_open.write("\n")
-file_open.write ("Value of the cosine using functions from scratch would be "+str(calculating_cosine(x1)))
+file_open.write ("Value of the cosine from scratch would be "+str(calculating_cosine(x1)))
 file_open.write("\n")
-file_open.write ("Value of the angle using functions from scratch in degree would be "+str(theta_value))
+file_open.write ("Value of the angle  scratch in degree would be "+str(theta_value))
 file_open.write("\n")
-file_open.write ("Value of line segment using functions from scratch would be "+str(linesegment_value))
+file_open.write ("Value of line segment from scratch would be "+str(linesegment_value))
 file_open.write("\n")
