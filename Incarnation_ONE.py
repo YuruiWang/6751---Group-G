@@ -101,3 +101,6 @@ file_open.write ("Value of the angle  scratch in degree would be "+str(theta_val
 file_open.write("\n")
 file_open.write ("Value of line segment from scratch would be "+str(linesegment_value))
 file_open.write("\n")
+def valuepassfromscratch(a):
+
+  a=linesegment_value
