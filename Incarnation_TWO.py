@@ -11,10 +11,18 @@ import pdb
 pdb.set_trace()
 print('**********CALCULATING EVERYTHING USING LIBRARY FUNCTIONS**********')
 
-try:   #EXCEPTION HANDLING
-    radius_value=Decimal(input('Enter the Legal value of RADIUS:'))
-except ValueError:
-    print ("Please enter the valid INPUT")
+while True :
+    while True:
+        try:
+            radius_value = float(input("Please enter the radius of the circles: "))
+            break
+        except ValueError:
+            print("Please enter a valid input")
+    if radius_value < 0:
+        print("Radius Can't be less than zero")
+    else:
+        break
+
     
 print('Value of PI using library functions is ')
 print(math.pi)
@@ -48,7 +56,7 @@ print('Value of sine using library functions')
 print(math.sin(x1))
 print('Value of cosine using library functions')
 print(math.cos(x1))
-d=Decimal(1-(math.cos(x1/2)))
+d=(1-(math.cos(x1/2)))
 print('Value of length segment using library functions')
 print ((2*(radius_value)*d))
 
