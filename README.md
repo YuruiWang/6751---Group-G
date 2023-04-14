@@ -1,4 +1,4 @@
-# Soen-6441
+#
 Team G- Project-CHEERS
 This is the Git repository of Team-G for CHEERS project in  SOEN-6441 (Advanced Programming practices) under the guidance of prof.Pankaj Kamthan
 
